@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shared_preference/post_repo.dart';
+
 import 'package:shared_preference/second_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -39,11 +39,10 @@ class _HomePageState extends State<HomePage> {
         actions: [
           IconButton(
               onPressed: () {
-                PostRepo().getPosts();
-                // Navigator.push(
-                //     context,
-                //     MaterialPageRoute(
-                //         builder: (context) => const SecondPage()));
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const SecondPage()));
               },
               icon: const Icon(Icons.navigate_next_outlined))
         ],
